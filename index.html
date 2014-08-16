@@ -172,7 +172,7 @@
 
                 <p class="lead">Some solid leading copy will help get your users engaged. User this area to compe up with something really nice. Know what I'm saying?</p>
 
-                <a href="" class="btn btn-large btn-primary">Click a nice big button</a>
+                <a href="" class="btn btn-large btn-primary" id="alertMe">Click a nice big button</a>
 
                 <a href="" class="btn btn-large btn-link">or a secondary link</a>
 
@@ -182,19 +182,158 @@
     <!-- End bigCallout div -->
 
     <div class="row" id="featuresHeading">
-
-    </div>
-    <!-- End featuresHeading div -->
+        <div class="col-12">
+            <h2>More features</h2>
+            <p class="lead">
+                Cornhole kitsch Williamsburg pub bicycle.
+            </p>
+        </div><!-- end col-12-->
+    </div><!-- End featuresHeading div -->
 
     <div class="row" id="features">
+        <div class="col-sm-4 feature">
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Markup wtih HTML5</h3>
+                </div><!--end panel-heading-->
+
+                <img src="images/badge_html5.jpg" alt="HTML5" class="img-circle"/>
+
+                <p>90's automatic single-origin coffee stumptown Pinterest. Fap pickled Brooklyn Ivory</p>
+
+                <a href="http://www.google.com" class="btn btn-warning btn-block">Learn to code HTML5</a>
+            </div><!--end panel-->
+        </div><!--end feature-->
+
+        <div class="col-sm-4 feature">
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Style it up wtih CSS3</h3>
+                </div><!--end panel-heading-->
+
+                <img src="images/badge_css3.jpg" alt="CSS3" class="img-circle"/>
+
+                <p>90's automatic single-origin coffee stumptown Pinterest. Fap pickled Brooklyn Ivory</p>
+
+                <a href="http://www.google.com" class="btn btn-danger btn-block">Style it up with CSS3</a>
+            </div><!--end panel-->
+        </div><!--end feature-->
+
+        <div class="col-sm-4 feature">
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Framework by Bootstrap 3</h3>
+                </div><!--end panel-heading-->
+
+                <img src="images/badge_bootstrap.jpg" alt="Bootstrap 3" class="img-circle"/>
+
+                <p>90's automatic single-origin coffee stumptown Pinterest. Fap pickled Brooklyn Ivory</p>
+
+                <a href="http://www.google.com" class="btn btn-info btn-block">More Bootstrap</a>
+            </div><!--end panel-->
+        </div><!--end feature-->
 
     </div>
     <!-- End features div -->
 
     <div class="row" id="moreInfo">
+        <div class="col-sm-6">
+            <h3>Neat Tabbable content</h3>
+            <div class="tabbable">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+                    <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                        <h4>
+                            <span class="glyphicon glyphicon-map-marker"></span>Our location <small>More like our favourite surf spot</small>
+                        </h4>
 
-    </div>
-    <!-- End moreInfo div -->
+                        <!-- Put a map here -->
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis dolore dolorum minima non recusandae, sit soluta vel. Aliquam amet at blanditiis culpa cupiditate esse nisi perspiciatis velit voluptate voluptates!</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore ea, est nostrum qui sapiente? Culpa minima porro quasi rem totam, vero. Alias dicta dolorum esse laboriosam provident quisquam sit?</p>
+                    </div><!--end tab-1-->
+
+                    <div class="tab-pane" id="tab2">
+                        <h4>
+                            A left floated picture <small>More like our favourite surf spot</small>
+                        </h4>
+                        <img src="http://placehold.it/140" class="thumbnail pull-left"/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet blanditiis dolore dolorum minima non recusandae, sit soluta vel. Aliquam amet at blanditiis culpa cupiditate esse nisi perspiciatis velit voluptate voluptates!</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore ea, est nostrum qui sapiente? Culpa minima porro quasi rem totam, vero. Alias dicta dolorum esse laboriosam provident quisquam sit?</p>
+
+                        <hr/>
+
+                        <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal">
+                            <span class="glyphicon glyphicon-hand-up"></span> Click for a Modal Window
+                        </a>
+
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button class="close" data-dismiss="modal">&times;</button>
+
+                                        <h4 class="modal-title">A Modal Window</h4>
+                                    </div><!--end modal-header-->
+                                    <div class="modal-body">
+                                        <h4>Text in a modal</h4>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut commodi dignissimos ducimus eos est, exercitationem ipsum iste maiores nam nesciunt odit praesentium quod ratione repellat repudiandae voluptatem voluptates voluptatibus.</p>
+
+                                        <h4>Popovers in a modal</h4>
+
+                                        <a href="#" class="btn btn-danger pop" data-toggle="popover"
+                                           data-placement="top" data-original-title="You clicked it!"
+                                           data-content="I know you would.">Don't click this button</a>
+
+                                        <h4>Tooltips in a modal</h4>
+                                        <a href="" data-original-title="Tooltip" rel="tooltip">This link</a> should have a tooltop, and so should <a href="#" data-original-title="Woohoo!" rel="tooltip">this one</a>!
+
+                                        <hr/>
+
+                                        <p><small class="text-muted">PS. This form doesn't do anything. Just a heads up.</small></p>
+
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label" for="inputName">Name</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" id="inputName" placeholder="Name" type="text"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" id="inputEmail" placeholder="Email" type="email"/>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label" for="inputMessage">Message</label>
+                                                <div class="col-lg-10">
+                                                    <textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+
+                                                    <button class="btn btn-success pull-right" type="submit">Send</button>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div><!--end modal-body-->
+                                    <div class="modal-footer">
+                                        <button class="btn btn-default" data-dismiss="modal" type="button">Close</button> <button class="btn btn-primary" type="button">Save Changes</button>
+                                    </div><!--end modal-footer-->
+                                </div><!--end modal-content-->
+                            </div><!--end modal-dialog>
+                        </div><!--end myModal-->
+
+                    </div><!-- end tab-2-->
+                </div><!-- end tab-content-->
+            </div><!--end tabbable-->
+        </div><!--end col-sm-6-->
+    </div><!-- End moreInfo div -->
 
     <div class="row" id="moreCourses">
 
